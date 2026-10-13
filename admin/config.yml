@@ -3,7 +3,7 @@ backend:
   branch: main
 
 media_folder: "images"
-public_folder: "/images"
+public_folder: "images"
 
 collections:
   - name: "dresses"
@@ -16,6 +16,8 @@ collections:
           - name: "products"
             label: "Dresses"
             widget: "list"
+            allow_add: true
+            summary: "{{fields.name}} ({{fields.id}}) - ₵{{fields.price}}"
             fields:
               - { name: "id", label: "ID (e.g. et-010)", widget: "string" }
               - { name: "name", label: "Name", widget: "string" }

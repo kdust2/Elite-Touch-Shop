@@ -276,6 +276,48 @@ async function renderGrids() {
         </li>`).join('');
       setupFilters();
     }
+
+    // 3. Home slider (.stage & #edt) - updates smoothly if products were added/edited in CMS
+    const stage = document.querySelector('.stage');
+    const edt = document.getElementById('edt');
+    if (stage && edt) {
+      const featured = products.slice(0, 6);
+      stage.innerHTML = featured.map((p, i) => `
+        <a class="sl ${i === 0 ? 'on' : 'pre'}" href="product.html?id=${p.id}" aria-label="${p.name}">
+          <img src="${p.image}" alt="">
+        </a>`).join('');
+
+      edt.innerHTML = featured.map((p, i) => {
+        const num = String(i + 1).padStart(2, '0');
+        const total = String(featured.length).padStart(2, '0');
+        return `
+          <div class="ecap ${i === 0 ? 'on' : ''}">
+            <p class="lb">${num} / ${total}</p>
+            <h3 class="d">${p.name}</h3>
+            <p class="pr">₵${p.price}</p>
+            <p class="ed-d">${p.description || ''}</p>
+            <a class="btn bk" href="product.html?id=${p.id}">View dress</a>
+          </div>
+        `;
+      }).join('');
+
+      cur = 0;
+      if ($("#pg2")) $("#pg2").style.width = (100 / featured.length) + "%";
+    }
+
+    // 4. New arrivals strip (.mt) - updates smoothly if products were added/edited in CMS
+    const strip = document.querySelector('.mt');
+    if (strip) {
+      strip.innerHTML = products.map(p => `
+        <a href="product.html?id=${p.id}">
+          <div class="mat p45">
+            <img src="${p.image}" alt="${p.name}">
+            ${p.soldOut ? '<span class="soldout">Sold out</span>' : ''}
+          </div>
+          <p class="cap"><span style="font:1.05rem var(--fd)">${p.name}</span><span>₵${p.price}</span></p>
+        </a>`).join('');
+      $$("a", strip).forEach(a => { const c = a.cloneNode(true); c.setAttribute("aria-hidden", "true"); c.tabIndex = -1; strip.append(c); });
+    }
   } catch (err) {
     console.error("renderGrids error:", err);
   }
