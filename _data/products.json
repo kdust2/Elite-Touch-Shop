@@ -1,103 +1,170 @@
 {
   "products": [
     {
-      "id": "et-001",
-      "name": "Adjoa Plaid Ruffle Skirt Set",
+      "fabric": "Cotton blend top, chiffon plaid skirt. Hand wash cold.",
       "price": 380,
-      "category": "two-piece",
-      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "name": "Adjoa Plaid Ruffle Skirt Set",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "soldOut": false,
+      "id": "et-001",
       "image": "images/dress-1-plaid-skirt-set.jpg",
       "description": "A black fitted tee paired with a flowing pink plaid maxi skirt featuring a dramatic ruffle overlay. Effortless day-to-evening dressing.",
-      "fabric": "Cotton blend top, chiffon plaid skirt. Hand wash cold."
+      "category": "two-piece"
     },
     {
-      "id": "et-002",
-      "name": "Akosua Shimmer Ruffle Midi",
+      "fabric": "Shimmer chiffon. Dry clean recommended.",
       "price": 420,
-      "category": "occasion",
-      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "name": "Akosua Shimmer Ruffle Midi",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "soldOut": false,
+      "id": "et-002",
       "image": "images/dress-2-fuchsia-ruffle-midi.jpg",
       "description": "Fuchsia midi dress with a tie-neck, blouson bodice, and tiered ruffle hem. Subtle shimmer dots catch the light beautifully.",
-      "fabric": "Shimmer chiffon. Dry clean recommended."
+      "category": "occasion"
     },
     {
-      "id": "et-003",
-      "name": "Efua Gingham Halter Dress",
+      "fabric": "Lightweight gingham cotton. Machine wash cold.",
       "price": 400,
-      "category": "casual",
-      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "name": "Efua Gingham Halter Dress",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "soldOut": false,
+      "id": "et-003",
       "image": "images/dress-3-gingham-halter.jpg",
       "description": "Pink and white gingham halter dress with a handkerchief hem and cross-back straps. Fresh, playful, and perfectly breezy.",
-      "fabric": "Lightweight gingham cotton. Machine wash cold."
+      "category": "casual"
     },
     {
-      "id": "et-004",
-      "name": "Nana Appliqué Kaftan",
+      "fabric": "Cotton kaftan with appliqué detailing. Hand wash.",
       "price": 450,
-      "category": "boubou",
-      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "name": "Nana Appliqué Kaftan",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "soldOut": false,
+      "id": "et-004",
       "image": "images/dress-4-applique-kaftan-front.jpg",
       "description": "Relaxed blue-and-white striped kaftan with hand-applied African print appliqués. A modern take on the classic boubou.",
-      "fabric": "Cotton kaftan with appliqué detailing. Hand wash."
+      "category": "boubou"
     },
     {
-      "id": "et-005",
-      "name": "Serwaa Floral Bodycon Maxi",
+      "fabric": "Stretch rib knit. Hand wash cold, lay flat to dry.",
       "price": 480,
-      "category": "occasion",
-      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "name": "Serwaa Floral Bodycon Maxi",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "soldOut": false,
+      "id": "et-005",
       "image": "images/dress-5-pink-floral-bodycon.jpg",
       "description": "Ribbed pink bodycon maxi with delicate 3D floral appliqués and bell sleeves. Sculpted, elegant, unforgettable.",
-      "fabric": "Stretch rib knit. Hand wash cold, lay flat to dry."
+      "category": "occasion"
     },
     {
-      "id": "et-006",
-      "name": "WUH Two-Piece Lounge Set",
+      "fabric": "Soft cotton jersey. Machine wash cold.",
       "price": 320,
-      "category": "two-piece",
-      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "name": "WUH Two-Piece Lounge Set",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "soldOut": false,
+      "id": "et-006",
       "image": "images/dress-6-wuh-set-front.jpg",
       "description": "Fuchsia tee and biker short set with a bold 'WUH' appliqué. Elevated comfort for off-duty days.",
-      "fabric": "Soft cotton jersey. Machine wash cold."
+      "category": "two-piece"
     },
     {
-      "id": "et-007",
-      "name": "Ama Fringe Striped Midi",
+      "fabric": "Stretch rib knit. Hand wash cold.",
       "price": 390,
-      "category": "occasion",
-      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "name": "Ama Fringe Striped Midi",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "soldOut": false,
+      "id": "et-007",
       "image": "images/dress-7-striped-fringe-midi.jpg",
       "description": "Burgundy and white horizontal stripes in a figure-hugging midi silhouette, finished with a playful fringe hem.",
-      "fabric": "Stretch rib knit. Hand wash cold."
+      "category": "occasion"
     },
     {
-      "id": "et-008",
-      "name": "Abena Green Floral Maxi",
+      "fabric": "Floral print chiffon. Dry clean recommended.",
       "price": 470,
-      "category": "occasion",
-      "sizes": ["L", "XL", "XXL"],
+      "name": "Abena Green Floral Maxi",
+      "sizes": [
+        "L",
+        "XL",
+        "XXL"
+      ],
       "soldOut": false,
+      "id": "et-008",
       "image": "images/dress-8-green-floral-maxi.jpg",
       "description": "Tiered green and white floral maxi with puff sleeves, a scooped neckline, and a tied open back. A garden-party favourite.",
-      "fabric": "Floral print chiffon. Dry clean recommended."
+      "category": "occasion"
     },
     {
-      "id": "et-009",
-      "name": "Adwoa Gingham Tiered Skirt Set",
+      "fabric": "Cotton blend top, gingham cotton skirt. Hand wash.",
       "price": 380,
-      "category": "two-piece",
-      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "name": "Adwoa Gingham Tiered Skirt Set",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "soldOut": false,
+      "id": "et-009",
       "image": "images/dress-10-gingham-tiered-skirt.jpg",
       "description": "Black tee paired with a pink and black gingham tiered maxi skirt. Bold checks, easy silhouette, everyday luxury.",
-      "fabric": "Cotton blend top, gingham cotton skirt. Hand wash."
+      "category": "two-piece"
+    },
+    {
+      "fabric": "cotton",
+      "price": 270,
+      "name": "afia friday",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "soldOut": false,
+      "id": "010",
+      "image": "images/s-l1600.webp",
+      "description": "i pink dress",
+      "category": "occasion"
     }
   ]
 }
