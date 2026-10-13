@@ -165,6 +165,19 @@
       "image": "images/s-l1600.webp",
       "description": "i pink dress",
       "category": "occasion"
+    },
+    {
+      "fabric": "FABRIC: COTTON ",
+      "price": 120,
+      "name": "Ladies Two Piece ",
+      "sizes": [
+        "Medium (M)"
+      ],
+      "soldOut": false,
+      "id": "10",
+      "image": "images/91633.png",
+      "description": "Color: Pink ",
+      "category": "two-piece"
     }
   ]
 }
