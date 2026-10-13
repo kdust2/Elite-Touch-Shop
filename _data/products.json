@@ -1,0 +1,103 @@
+{
+  "products": [
+    {
+      "id": "et-001",
+      "name": "Adjoa Plaid Ruffle Skirt Set",
+      "price": 380,
+      "category": "two-piece",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "soldOut": false,
+      "image": "images/dress-1-plaid-skirt-set.jpg",
+      "description": "A black fitted tee paired with a flowing pink plaid maxi skirt featuring a dramatic ruffle overlay. Effortless day-to-evening dressing.",
+      "fabric": "Cotton blend top, chiffon plaid skirt. Hand wash cold."
+    },
+    {
+      "id": "et-002",
+      "name": "Akosua Shimmer Ruffle Midi",
+      "price": 420,
+      "category": "occasion",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "soldOut": false,
+      "image": "images/dress-2-fuchsia-ruffle-midi.jpg",
+      "description": "Fuchsia midi dress with a tie-neck, blouson bodice, and tiered ruffle hem. Subtle shimmer dots catch the light beautifully.",
+      "fabric": "Shimmer chiffon. Dry clean recommended."
+    },
+    {
+      "id": "et-003",
+      "name": "Efua Gingham Halter Dress",
+      "price": 400,
+      "category": "casual",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "soldOut": false,
+      "image": "images/dress-3-gingham-halter.jpg",
+      "description": "Pink and white gingham halter dress with a handkerchief hem and cross-back straps. Fresh, playful, and perfectly breezy.",
+      "fabric": "Lightweight gingham cotton. Machine wash cold."
+    },
+    {
+      "id": "et-004",
+      "name": "Nana Appliqué Kaftan",
+      "price": 450,
+      "category": "boubou",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "soldOut": false,
+      "image": "images/dress-4-applique-kaftan-front.jpg",
+      "description": "Relaxed blue-and-white striped kaftan with hand-applied African print appliqués. A modern take on the classic boubou.",
+      "fabric": "Cotton kaftan with appliqué detailing. Hand wash."
+    },
+    {
+      "id": "et-005",
+      "name": "Serwaa Floral Bodycon Maxi",
+      "price": 480,
+      "category": "occasion",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "soldOut": false,
+      "image": "images/dress-5-pink-floral-bodycon.jpg",
+      "description": "Ribbed pink bodycon maxi with delicate 3D floral appliqués and bell sleeves. Sculpted, elegant, unforgettable.",
+      "fabric": "Stretch rib knit. Hand wash cold, lay flat to dry."
+    },
+    {
+      "id": "et-006",
+      "name": "WUH Two-Piece Lounge Set",
+      "price": 320,
+      "category": "two-piece",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "soldOut": false,
+      "image": "images/dress-6-wuh-set-front.jpg",
+      "description": "Fuchsia tee and biker short set with a bold 'WUH' appliqué. Elevated comfort for off-duty days.",
+      "fabric": "Soft cotton jersey. Machine wash cold."
+    },
+    {
+      "id": "et-007",
+      "name": "Ama Fringe Striped Midi",
+      "price": 390,
+      "category": "occasion",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "soldOut": false,
+      "image": "images/dress-7-striped-fringe-midi.jpg",
+      "description": "Burgundy and white horizontal stripes in a figure-hugging midi silhouette, finished with a playful fringe hem.",
+      "fabric": "Stretch rib knit. Hand wash cold."
+    },
+    {
+      "id": "et-008",
+      "name": "Abena Green Floral Maxi",
+      "price": 470,
+      "category": "occasion",
+      "sizes": ["L", "XL", "XXL"],
+      "soldOut": false,
+      "image": "images/dress-8-green-floral-maxi.jpg",
+      "description": "Tiered green and white floral maxi with puff sleeves, a scooped neckline, and a tied open back. A garden-party favourite.",
+      "fabric": "Floral print chiffon. Dry clean recommended."
+    },
+    {
+      "id": "et-009",
+      "name": "Adwoa Gingham Tiered Skirt Set",
+      "price": 380,
+      "category": "two-piece",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "soldOut": false,
+      "image": "images/dress-10-gingham-tiered-skirt.jpg",
+      "description": "Black tee paired with a pink and black gingham tiered maxi skirt. Bold checks, easy silhouette, everyday luxury.",
+      "fabric": "Cotton blend top, gingham cotton skirt. Hand wash."
+    }
+  ]
+}

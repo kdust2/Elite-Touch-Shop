@@ -87,3 +87,17 @@ footer{margin-top:128px;background:var(--ink);color:var(--paper)}footer .w{displ
 footer .w{grid-template-columns:repeat(12,1fr)}footer .w>*:nth-child(1){grid-column:1/6}footer .w>*:nth-child(2){grid-column:7/10}footer .w>*:nth-child(3){grid-column:10/13}}
 @media(min-width:1024px){.pgrid{grid-template-columns:repeat(3,1fr)}.pgrid.rel{grid-template-columns:repeat(4,1fr)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hd::after{transform:none}*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+
+/* Decap CMS Sold Out Badge */
+.soldout {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  padding: 6px 10px;
+  z-index: 2;
+}

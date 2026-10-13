@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "dresses"
+    label: "Dresses"
+    files:
+      - name: "products"
+        label: "All Dresses"
+        file: "_data/products.json"
+        fields:
+          - name: "products"
+            label: "Dresses"
+            widget: "list"
+            fields:
+              - { name: "id", label: "ID (e.g. et-010)", widget: "string" }
+              - { name: "name", label: "Name", widget: "string" }
+              - { name: "price", label: "Price (₵)", widget: "number", value_type: "int" }
+              - { name: "category", label: "Category", widget: "select", options: ["casual", "occasion", "boubou", "two-piece"] }
+              - { name: "sizes", label: "Available sizes", widget: "list", field: { name: "size", widget: "string" } }
+              - { name: "soldOut", label: "Sold out?", widget: "boolean", default: false }
+              - { name: "image", label: "Photo", widget: "image" }
+              - { name: "description", label: "Description", widget: "text" }
+              - { name: "fabric", label: "Fabric & care", widget: "text" }
