@@ -169,7 +169,7 @@ drawer();
 /* ---------- Decap CMS Dynamic Integration (_data/products.json) ---------- */
 async function renderGrids() {
   try {
-    const res = await fetch('_data/products.json');
+    const res = await fetch('_data/products.json', { cache: 'no-store' });
     if (!res.ok) return;
     const data = await res.json();
     const products = Array.isArray(data) ? data : (data.products || []);
