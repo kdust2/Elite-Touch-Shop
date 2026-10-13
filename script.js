@@ -15,15 +15,15 @@ const save = () => { try { localStorage.setItem("etc-cart", JSON.stringify(cart)
 function drawer() {
   const n = cart.reduce((s, i) => s + i.q, 0), t = cart.reduce((s, i) => s + i.p * i.q, 0), cb = $("#cb");
   if (cb) {
-    cb.innerHTML = `Bag <b>${n}</b>`;
-    cb.setAttribute("aria-label", `Open bag, ${n} items`);
+    cb.innerHTML = `Cart <b>${n}</b>`;
+    cb.setAttribute("aria-label", `Open cart, ${n} items`);
     if (n) $("b", cb).classList.add("bp");
   }
   const db = $("#db");
   if (!db) return;
   db.innerHTML = cart.length
     ? `<ul class="dl">${cart.map(i => `<li><div class="mat"><img class="cv" src="${i.img}" alt="${i.n}"></div><div class="mt2"><div><p class="d" style="font-size:1.05rem">${i.n}</p><p style="opacity:.6">Size ${i.s}</p></div><div style="display:flex;justify-content:space-between;align-items:center"><div class="qt"><button data-a="cq" data-id="${i.id}" data-s="${i.s}" data-d="-1" aria-label="Decrease quantity">−</button><span>${i.q}</span><button data-a="cq" data-id="${i.id}" data-s="${i.s}" data-d="1" aria-label="Increase quantity">+</button></div><span>${fmt(i.p * i.q)}</span></div><button data-a="cq" data-id="${i.id}" data-s="${i.s}" data-d="-99" style="align-self:flex-start;text-decoration:underline;font-size:12px">Remove</button></div></li>`).join("")}</ul><div class="df"><p><span>Subtotal</span><span>${fmt(t)}</span></p><a class="btn bk" target="_blank" rel="noopener noreferrer" href="${wa(`Hello Elite Touch Collections 👋\n\nI'd like to place an order:\n\n${cart.map((i, k) => `${k + 1}. ${i.n} — Size: ${i.s} — Qty: ${i.q} — ${fmt(i.p * i.q)}`).join("\n")}\n\nSubtotal: ${fmt(t)}\n\nPlease confirm availability and delivery. Thank you!`)}">Complete order on WhatsApp</a></div>`
-    : `<div class="em"><p>Your bag is empty.</p><a class="btn bk" href="shop.html">Browse the collection</a></div>`;
+    : `<div class="em"><p>Your cart is empty.</p><a class="btn bk" href="shop.html">Browse the collection</a></div>`;
 }
 
 function setDr(o) {
