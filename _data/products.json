@@ -178,6 +178,17 @@
       "image": "images/91633.png",
       "description": "Color: Pink ",
       "category": "two-piece"
+    },
+    {
+      "soldOut": false,
+      "name": "Pink Blossom Maxi Gown ",
+      "price": 100,
+      "category": "casual",
+      "sizes": [
+        "XXL"
+      ],
+      "description": "Color: Pink And White 🤍",
+      "fabric": "Stretch Polyester "
     }
   ]
 }
