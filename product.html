@@ -3,13 +3,18 @@
 <head>
   <meta charset="utf-8">
   <title>Dress | Elite Touch Collections</title>
-  <meta name="description" content="Shop dresses from Elite Touch Collections.">
+  <meta name="description" content="Shop dresses from Elite Touch Collections. Made in Ghana.">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:site_name" content="Elite Touch Collections">
+  <meta property="og:title" content="Elite Touch Collections">
+  <meta property="og:description" content="Ready-to-wear women's dresses from Ghana. Handcrafted elegance.">
+  <meta property="og:type" content="product">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Playfair+Display:ital,wght@0,500;1,400&family=Kaushan+Script&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- ============ TOP STRIP + NAVIGATION (same on every page) ============ -->
+<!-- ============ TOP STRIP + NAVIGATION ============ -->
 <a href="#main" class="sr sk">Skip to content</a>
 <div class="top">Order on WhatsApp · <a href="https://wa.me/233531331640?text=Hello%20Elite%20Touch%20Collections%20%F0%9F%91%8B" target="_blank" rel="noopener noreferrer">+233 53 133 1640</a></div>
 <header id="hd">
@@ -33,7 +38,7 @@
           <circle cx="24" cy="3" r="1.5"/>
         </g>
         <text class="ls" x="2" y="54" font-size="44" textLength="226" lengthAdjust="spacingAndGlyphs">Elite Touch</text>
-        <text class="lc" x="124" y="72" font-size="11" letter-spacing="3">collections</text>
+        <text class="lc" x="124" y="72" font-size="11" letter-spacing="3">Collections</text>
       </svg>
     </a>
     <div class="nr">
@@ -50,6 +55,18 @@
 </div>
 
 <main id="main" tabindex="-1">
+  <div class="w" style="padding-top:28px">
+    <nav class="bc" id="pbc" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="bc-sep">/</span>
+      <a href="shop.html">Shop</a>
+      <span class="bc-sep">/</span>
+      <a href="shop.html" id="pbcat">Collection</a>
+      <span class="bc-sep">/</span>
+      <span id="pbname" style="opacity:.6">Dress</span>
+    </nav>
+  </div>
+
   <div class="pdg w" id="pp" data-id="" data-name="" data-price="" data-img="">
     <div class="pm">
       <div class="mat p45" id="pmat">
@@ -59,9 +76,12 @@
     <div class="pi">
       <h1 class="d" style="font-size:clamp(2.2rem,4.5vw,3.4rem)"></h1>
       <p class="pr"></p>
-      <p id="pdesc" style="margin-top:24px;max-width:28rem;opacity:.75"></p>
-      <fieldset style="margin-top:40px">
-        <legend class="lb">Size</legend>
+      <p id="pdesc" style="margin-top:24px;max-width:28rem;opacity:.75;line-height:1.6"></p>
+      <fieldset style="margin-top:36px">
+        <div class="sz-head">
+          <legend class="lb">Available Sizes</legend>
+          <button type="button" class="sz-link" data-a="sizeguide">Size Guide</button>
+        </div>
         <div class="sz" id="psz"></div>
       </fieldset>
       <div class="qt" style="margin-top:32px" role="group" aria-label="Quantity">
@@ -85,7 +105,39 @@
   </section>
 </main>
 
-<!-- ============ FOOTER (same on every page) ============ -->
+<!-- ============ SIZE GUIDE MODAL ============ -->
+<div class="modal-bd" id="sg-bd" data-a="close-sg"></div>
+<div class="modal-box" id="sg-box" role="dialog" aria-modal="true" aria-labelledby="sg-title">
+  <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(14,14,14,.1);padding-bottom:16px">
+    <h2 class="d" id="sg-title" style="font-size:1.6rem">Size Guide</h2>
+    <button class="lb" data-a="close-sg" style="background:none;border:none;cursor:pointer;padding:8px">Close</button>
+  </div>
+  <p style="margin-top:16px;font-size:13px;opacity:.75;line-height:1.6">All garments are measured in standard inches and crafted in Accra. If you are between sizes, we recommend sizing up or reaching out on WhatsApp for complimentary sizing consultation.</p>
+  <table class="sz-tbl">
+    <thead>
+      <tr>
+        <th>Size</th>
+        <th>Bust (in)</th>
+        <th>Waist (in)</th>
+        <th>Hips (in)</th>
+        <th>UK / US</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><b>XS</b></td><td>32 – 33</td><td>24 – 25</td><td>34 – 35</td><td>UK 6 / US 2</td></tr>
+      <tr><td><b>S</b></td><td>34 – 35</td><td>26 – 27</td><td>36 – 37</td><td>UK 8 / US 4</td></tr>
+      <tr><td><b>M</b></td><td>36 – 37</td><td>28 – 29</td><td>38 – 40</td><td>UK 10 / US 6</td></tr>
+      <tr><td><b>L</b></td><td>38 – 40</td><td>30 – 32</td><td>41 – 43</td><td>UK 12 / US 8</td></tr>
+      <tr><td><b>XL</b></td><td>41 – 43</td><td>33 – 35</td><td>44 – 46</td><td>UK 14 / US 10</td></tr>
+      <tr><td><b>XXL</b></td><td>44 – 46</td><td>36 – 38</td><td>47 – 50</td><td>UK 16 / US 12</td></tr>
+    </tbody>
+  </table>
+  <div style="margin-top:24px;padding:16px;background:var(--mat);font-size:12px;opacity:.85;line-height:1.6">
+    <b>Custom sizing available:</b> Because every piece is cut in Ghana, you can tap "Order this on WhatsApp" to send your exact measurements directly to our tailor.
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
 <footer>
   <div class="w">
     <a href="index.html" class="lg flg" aria-label="Elite Touch Collections, home">
@@ -98,7 +150,7 @@
           <circle cx="24" cy="3" r="1.5"/>
         </g>
         <text class="ls" x="2" y="54" font-size="44" textLength="226" lengthAdjust="spacingAndGlyphs">Elite Touch</text>
-        <text class="lc" x="124" y="72" font-size="11" letter-spacing="3">collections</text>
+        <text class="lc" x="124" y="72" font-size="11" letter-spacing="3">Collections</text>
       </svg>
     </a>
     <ul>
@@ -115,9 +167,12 @@
   <p class="w lb" style="border-top:1px solid rgba(250,247,242,.15);padding-top:24px;padding-bottom:24px;opacity:.6;letter-spacing:.08em">© 2026 Elite Touch Collections. Made in Ghana.</p>
 </footer>
 
-<!-- ============ CART DRAWER (filled by script.js) ============ -->
+<!-- ============ CART DRAWER ============ -->
 <div class="bd" id="bd" data-a="close"></div>
-<aside class="dr" id="dr" role="dialog" aria-modal="true" aria-label="Shopping cart" aria-hidden="true"><div class="dh"><h2 class="d">Your cart</h2><button class="lb" data-a="close" id="dc">Close</button></div><div id="db" style="display:flex;flex-direction:column;flex:1;min-height:0"></div></aside>
+<aside class="dr" id="dr" role="dialog" aria-modal="true" aria-label="Shopping cart" aria-hidden="true">
+  <div class="dh"><h2 class="d">Your cart</h2><button class="lb" data-a="close" id="dc">Close</button></div>
+  <div id="db" style="display:flex;flex-direction:column;flex:1;min-height:0"></div>
+</aside>
 <script src="script.js"></script>
 </body>
 </html>

@@ -44,6 +44,14 @@ function setMenu(o) {
   if (o && $("#hd")) m.style.paddingTop = $("#hd").getBoundingClientRect().bottom + 16 + "px";
 }
 
+function setSizeGuide(o) {
+  const bd = $("#sg-bd"), bx = $("#sg-box");
+  if (!bd || !bx) return;
+  bd.classList.toggle("open", !!o);
+  bx.classList.toggle("open", !!o);
+  root.classList.toggle("lock", !!o || ($("#dr") && $("#dr").classList.contains("open")) || ($("#mm") && $("#mm").classList.contains("open")));
+}
+
 /* ---------- Home slider ---------- */
 let cur = 0;
 function go(d) {
@@ -74,7 +82,9 @@ function updateProduct() {
 document.addEventListener("click", e => {
   const t = e.target.closest("[data-a]"); if (!t) return;
   const a = t.dataset.a;
-  if (a === "cart") setDr(1);
+  if (a === "sizeguide") setSizeGuide(1);
+  else if (a === "close-sg") setSizeGuide(0);
+  else if (a === "cart") setDr(1);
   else if (a === "close") setDr(0);
   else if (a === "menu") setMenu(!$("#mm").classList.contains("open"));
   else if (a === "en") go(1);
@@ -108,7 +118,7 @@ document.addEventListener("click", e => {
 });
 
 document.addEventListener("keydown", e => {
-  if (e.key === "Escape") { setDr(0); setMenu(0); }
+  if (e.key === "Escape") { setDr(0); setMenu(0); setSizeGuide(0); }
   if (e.target.closest && e.target.closest(".ed")) { if (e.key === "ArrowRight") go(1); if (e.key === "ArrowLeft") go(-1); }
   const d = $("#dr");
   if (e.key === "Tab" && d && d.classList.contains("open")) {
@@ -155,7 +165,7 @@ const mt = $(".mt");
 if (mt) $$("a", mt).forEach(a => { const c = a.cloneNode(true); c.setAttribute("aria-hidden", "true"); c.tabIndex = -1; mt.append(c); }); // repeat strip for a seamless loop
 
 const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -60px" });
-$$(".hd,.sec>h2.d,.pgrid>li,.fq>div,.gr>li,.rw").forEach(e => {
+$$(".hd,.sec>h2.d,.pgrid>li,.fq>div,.gr>li,.rw,.tcard").forEach(e => {
   e.classList.add("rv");
   e.style.transitionDelay = Math.min($$(":scope>*", e.parentNode).indexOf(e), 5) * 80 + "ms";
   io.observe(e);
@@ -181,7 +191,16 @@ async function renderGrids() {
       const id = params.get('id');
       const p = (id ? products.find(x => x.id === id) : null) || products[0];
       if (p) {
-        document.title = p.name + ' | Elite Touch Collections';
+        document.title = p.name + " | Elite Touch Collections";
+
+        const pbcat = $("#pbcat");
+        if (pbcat) {
+          pbcat.textContent = p.category ? (p.category.charAt(0).toUpperCase() + p.category.slice(1)) : "Collection";
+          pbcat.href = p.category ? "shop-" + p.category + ".html" : "shop.html";
+        }
+        const pbname = $("#pbname");
+        if (pbname) pbname.textContent = p.name;
+
         pp.dataset.id = p.id;
         pp.dataset.name = p.name;
         pp.dataset.price = p.price;
